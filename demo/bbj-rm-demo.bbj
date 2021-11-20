@@ -1,0 +1,19 @@
+wnd! = BBjAPI().openSysGui("X0").addWindow(10,10,200,200,"BBj RM",$00090083$)
+wnd!.setCallback(BBjAPI.ON_CLOSE,"onClose")
+wnd!.setAttribute("@app-script", "src=http://localhost:5555/bbj-rm.js")
+wnd!.setAttribute("@app-script", "src=/rm-demo/scripts/index.js")
+wnd!.setAttribute("@app-link", "href=/hrm-demo/styles/style.css rel=stylesheet")
+
+bt! = wnd!.addButton(101,10,10,100,30,"Button")
+bt!.setCallback(bt!.ON_BUTTON_PUSH,"event")
+wnd!.addStaticText(102,15,50,100,50,"BBj HRM Rocks",$0000$)
+
+process_events
+
+onClose:
+    release 
+return
+
+event:
+ BBjAPI().getSysGui().executeScript("msg()")
+return

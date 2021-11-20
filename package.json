@@ -1,0 +1,18 @@
+{
+  "name": "bbj-rm",
+  "version": "0.0.1",
+  "description": "DWC Reload Module",
+  "main": "bbj-rm.js",
+  "author": "Hyyan Abo Fakher",
+  "license": "MIT",
+  "dependencies": {
+    "boxen": "^5.0.0",
+    "chalk": "^4.1.2",
+    "chokidar": "^3.5.2",
+    "commander": "^8.3.0",
+    "fs-extra": "^10.0.0",
+    "get-port": "^5.0.0",
+    "recursive-copy": "^2.0.13",
+    "socket.io": "^4.4.0"
+  }
+}
