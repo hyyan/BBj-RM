@@ -6,7 +6,7 @@ wnd!.setAttribute("@app-link", "href=/rm-demo/styles/style.css rel=stylesheet")
 
 bt! = wnd!.addButton(101,10,10,100,30,"Button")
 bt!.setCallback(bt!.ON_BUTTON_PUSH,"event")
-wnd!.addStaticText(102,15,50,100,50,"BBj HRM Rocks",$0000$)
+wnd!.addStaticText(102,15,50,100,50,"BBj RM Rocks",$0000$)
 
 process_events
 

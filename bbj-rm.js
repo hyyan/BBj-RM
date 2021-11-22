@@ -71,10 +71,10 @@ program
 
     server.listen(port, () => {
       log(chalk.bold(`BBj RM By Hyyan Abo Fakher\n`));
-      log(chalk.bold.cyan(`Running`) + ` Running on port ${port}`);
+      log(chalk.bold.cyan(`Running`) + ` BBj RM running on port ${port}`);
       log(chalk.cyan(
         boxen(
-          "To connect the the BBj RM include the following in your DWC application:\n\n" +
+          "To connect to the BBj RM include the following in your DWC application:\n\n" +
           `wnd!.setAttribute("@app-script", "src=http://localhost:${port}/bbj-rm.js")`,
           {
             borderStyle: 'round',
