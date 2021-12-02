@@ -5,6 +5,9 @@
   "main": "bbj-rm.js",
   "author": "Hyyan Abo Fakher",
   "license": "MIT",
+  "bin": {
+    "bbj-rm": "./bbj-rm.js"
+  },
   "scripts": {
     "build": "pkg bbj-rm.js --out-path ./dist"
   },
