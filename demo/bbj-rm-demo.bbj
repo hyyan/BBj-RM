@@ -1,8 +1,10 @@
+web! = BBjAPI().getWebManager()
+web!.injectScriptUrl("http://localhost:5151/server.js")
+web!.injectScriptUrl("/demo/scripts/index.js")
+web!.injectStyleUrl("/demo/styles/style.css")
+
 wnd! = BBjAPI().openSysGui("X0").addWindow(10,10,200,200,"BBj RM",$00090083$)
 wnd!.setCallback(BBjAPI.ON_CLOSE,"onClose")
-wnd!.setAttribute("@app-script", "src=http://localhost:5555/bbj-rm.js")
-wnd!.setAttribute("@app-script", "src=/rm-demo/scripts/index.js")
-wnd!.setAttribute("@app-link", "href=/rm-demo/styles/style.css rel=stylesheet")
 
 bt! = wnd!.addButton(101,10,10,100,30,"Button")
 bt!.setCallback(bt!.ON_BUTTON_PUSH,"event")
@@ -15,5 +17,5 @@ onClose:
 return
 
 event:
- BBjAPI().getSysGui().executeScript("msg()")
+ BBjAPI().getSysGui().executeScript("$wnd.msg()")
 return

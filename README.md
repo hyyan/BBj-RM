@@ -9,17 +9,17 @@ BBj Reload Module is standalone server which helps you quickly and easily experi
   * Move the executable file to some place global in your system
   * Run the following command: 
   
-    `./path/to/bbj-rm  ./src ./output/hrm-demo -f "**/*.*(css|js)"`
+    `> server-win.exe .\demo\ C:\bbj\htdocs\demo -f "**/*.{css,js}"`
 
 
 ## Options 
 
 ```
-Usage: bbj-rm [options] <input> <output>
+Usage: server [options] <input> <output>
 
 Arguments:
-  input                 The input directory
-  output                The output directory
+  input                 The input directory where your project files are located
+  output                The output directory (Usually the BBj htdocs folder)
 
 Options:
   -V, --version         output the version number

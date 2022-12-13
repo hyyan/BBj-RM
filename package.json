@@ -1,15 +1,15 @@
 {
   "name": "bbj-rm",
   "version": "0.0.1",
-  "description": "DWC Reload Module",
-  "main": "bbj-rm.js",
+  "description": "DWC & BUI Reload Module",
+  "main": "server.js",
   "author": "Hyyan Abo Fakher",
   "license": "MIT",
   "bin": {
-    "bbj-rm": "./bbj-rm.js"
+    "bbj-rm": "./server.js"
   },
   "scripts": {
-    "build": "pkg bbj-rm.js --out-path ./dist"
+    "build": "pkg server.js --out-path ./dist"
   },
   "dependencies": {
     "boxen": "^5.0.0",
@@ -19,6 +19,7 @@
     "fs-extra": "^10.0.0",
     "get-port": "^5.0.0",
     "recursive-copy": "^2.0.13",
-    "socket.io": "^4.4.0"
+    "ws": "^8.11.0",
+    "websocket": "^1.0.34"
   }
 }
