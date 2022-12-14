@@ -116,7 +116,7 @@ In case you are using [gulp](https://gulpjs.com/) to compile and build your asse
 
 + 2- Does this tool work with the `GUI` client? +
 
-  No. This tool works with the DWC and GUI clients only
+  No. This tool works with the DWC and BUI clients only
 
 + 3- Is this tool free? +
 
