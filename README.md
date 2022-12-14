@@ -1,29 +1,33 @@
 # BBj RM
 
-BBj Reload Module is standalone server which helps you quickly and easily experiment, build UIs, add features,fix bugs and view the effects of your changes directly in the browser.
+<p>
+  <a href="http://www.basis.cloud/downloads">
+    <img src="https://img.shields.io/badge/BBj-v22.00-blue" alt="BBj v22.00" />
+  </a>
+  <a href="https://github.com/hyyan/BBj-RM/blob/master/README.md">
+    <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="BBj-RM is released under the MIT license." />
+  </a>
+  <a href="https://github.com/necolas/issue-guidelines/blob/master/CONTRIBUTING.md#pull-requests">
+    <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs welcome!" />
+  </a>
+</p>
 
+The main purpose of this project is to avoid infamous change -> restart & wait -> check development lifecycle. Save & Reload during development
 
-## How to use ?
+BBj RM (BBj Reload Module) is a standalone [NodeJs](https://nodejs.org/en/) server to bring Hot Reload & Live Reload support to BBj. It helps you quickly and easily experiment, build UIs, add features,fix bugs and view the effects of your changes directly in the browser.
 
-  * Download the executable file based on your system from the `./dist` folder.
-  * Move the executable file to some place global in your system
-  * Run the following command: 
-  
-    `> server-win.exe .\demo\ C:\bbj\htdocs\demo -f "**/*.{css,js}"`
+The server is packaged into an executable that can be run on major operating systems. (Windows, Linux, and macOS) even on devices without Node.js installed.
 
+## Documentation
 
-## Options 
+Check the [documentation](https://hyyan.github.io/BBj-RM) to get you started!
 
-```
-Usage: server [options] <input> <output>
+## Contributing
 
-Arguments:
-  input                 The input directory where your project files are located
-  output                The output directory (Usually the BBj htdocs folder)
+Everyone is welcome to help contribute and improve this plugin. There are several
+ways you can contribute:
 
-Options:
-  -V, --version         output the version number
-  -p, --port <number>   The port of the server and the web socket (default: 5555)
-  -f, --filter <regex>  A regular expression which describes what files to copy. (default: "**/*.css")
-  -h, --help            display help for command
-```
+* Reporting issues (please read [issue guidelines](https://github.com/necolas/issue-guidelines))
+* Suggesting new features
+* Writing or refactoring code
+* Fixing [issues](https://github.com/hyyan/BBj-RM//issue)

@@ -2,24 +2,30 @@
   "name": "bbj-rm",
   "version": "0.0.1",
   "description": "DWC & BUI Reload Module",
-  "main": "server.js",
+  "main": "src/cli.js",
   "author": "Hyyan Abo Fakher",
   "license": "MIT",
   "bin": {
-    "bbj-rm": "./server.js"
+    "bbj-rm": "./src/cli.js"
   },
   "scripts": {
-    "build": "pkg server.js --out-path ./dist"
+    "build": "pkg src/cli.js --public --out-path ./dist"
   },
   "dependencies": {
-    "boxen": "^5.0.0",
+    "better-logging": "^5.0.0",
     "chalk": "^4.1.2",
     "chokidar": "^3.5.2",
+    "cli-box": "^6.0.10",
     "commander": "^8.3.0",
     "fs-extra": "^10.0.0",
     "get-port": "^5.0.0",
+    "micromatch": "^4.0.5",
+    "mirror-folder": "^3.1.0",
     "recursive-copy": "^2.0.13",
-    "ws": "^8.11.0",
-    "websocket": "^1.0.34"
+    "ws": "^8.11.0"
+  },
+  "devDependencies": {
+    "pkg": "^5.8.0",
+    "resedit": "^1.6.1"
   }
 }

@@ -12,7 +12,7 @@ gulp.task('styles', () => {
 
 gulp.task('default', gulp.series(['styles']));
 gulp.task('watch', () => {
-  gulp.watch('src/public/**/*.scss', (done) => {
+  gulp.watch('src/public/**/*.scss', { ignoreInitial: false }, (done) => {
     gulp.series(['styles'])(done);
   });
 });

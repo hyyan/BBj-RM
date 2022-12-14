@@ -4,7 +4,9 @@
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "concurrently --kill-others \"gulp watch\" \"c:\\server-win.exe .\\dist C:\\bbj\\htdocs\\bbj-rm-gulp -f \"**/*.{css,js}\""
+    "watch:assets": "gulp watch",
+    "watch:bbj": "C:/server-win.exe \"./{src,dist}/**/*.{bbj,css}\" C:/bbj/htdocs/bbj-rm-gulp -f \"dist/**/*.css\"",
+    "start": "concurrently \"npm run watch:assets\" \"npm run watch:bbj\" --kill-others"
   },
   "author": "",
   "license": "ISC",
