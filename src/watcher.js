@@ -22,11 +22,9 @@ module.exports = async (input, output, broadcast, options) => {
     switch (event) {
       case 'add':
       case 'change':
-        console.log(micromatch.isMatch(currentPath, defaultOptions.filter));
         if (micromatch.isMatch(currentPath, defaultOptions.filter)) {
           const dir = path.dirname(currentPath);
           fs.ensureDirSync(path.resolve(output, dir));
-          console.log( `${path.resolve(output, dir)}/${path.basename(currentPath)}`);
           fs.copySync(currentPath, `${path.resolve(output, dir)}/${path.basename(currentPath)}`);
         }
         break;
